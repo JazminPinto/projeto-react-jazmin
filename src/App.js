@@ -1,10 +1,22 @@
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import ContactsList from "./Components/ContactsList/ContactsList";
+import CriarContato from "./Components/CriarContato/CriarContato";
+import EditarContacto from "./Components/EditarContato/EditarContato";
+import "./Components/Header/Header";
+import Header from "./Components/Header/Header";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-     
-    </div>
+      <BrowserRouter>
+      <Header/>
+        <Routes>
+          <Route path="/" element={ <ContactsList />}/>
+          <Route path="/criar" element={<CriarContato/>} />
+          <Route path="/editar/:id" element={<EditarContacto/>}/>
+        </Routes>
+      </BrowserRouter>
   );
 }
 
