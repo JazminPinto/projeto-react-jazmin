@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 export default function CriarContato() {
   const [nome, setNome] = useState("");
@@ -53,7 +54,7 @@ export default function CriarContato() {
         <br />
       </form>
       <Link to='/'>
-      <button onClick={novoContato}>Adicionar</button>
+      <Button variant='success'onClick={novoContato}>Adicionar</Button>
       </Link>
     </div>
   );

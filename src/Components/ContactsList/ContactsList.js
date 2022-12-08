@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import './ContactsList.css'
 import { Button, Modal } from "react-bootstrap";
 
 export default function ContactsList() {
@@ -32,26 +33,28 @@ export default function ContactsList() {
   };
 
   return (
-    <div>
-      <h1>Lista de contatos</h1>
+    <div className="lista-de-contatos">
+      <h1><i>Lista de contatos</i></h1>
 
       {contatos.map((contato) => {
         return (
-          <div key={contato.id}>
+          <div className="cartao-contato" key={contato.id}>
             <ul>
               <li>{contato.nome}</li>
               <li>{contato.email}</li>
               <li>{contato.telefone}</li>
             </ul>
-            <div>
+            <div >
               <Link to={`/editar/${contato.id}`}>
-                <Button variant="warning">Editar</Button>
-              </Link>
+                <Button variant="success" size='sm'
+                className="botoes-lista">Editar</Button>
+              </Link> 
+              <br/>
               <Button
                 variant="danger"
                 size="sm"
                 onClick={() => mostrarModal(contato.id)}
-              >
+                className="botoes-lista">
                 Apagar
               </Button>
             </div>

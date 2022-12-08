@@ -1,10 +1,22 @@
 {
   "contacts": [
     {
-      "nome": "teste",
+      "nome": "teste1",
       "email": "ssdsf@teste",
       "telefone": "5454",
       "id": 3
+    },
+    {
+      "nome": "jazmin ",
+      "email": "jazmin@gmail.com",
+      "telefone": "54879612",
+      "id": 4
+    },
+    {
+      "nome": "catalina",
+      "email": "catalin@mail.com",
+      "telefone": "789654123",
+      "id": 5
     }
   ]
 }

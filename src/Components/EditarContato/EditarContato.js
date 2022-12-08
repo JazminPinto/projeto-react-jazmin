@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 export default function EditarContacto() {
   const { id } = useParams();
@@ -65,7 +66,7 @@ export default function EditarContacto() {
         <br />
       </form>
       <Link to="/">
-        <button onClick={alterarContato}>Alterar contato</button>
+        <Button variant='success'onClick={alterarContato}>Alterar contato</Button>
       </Link>
     </div>
   );

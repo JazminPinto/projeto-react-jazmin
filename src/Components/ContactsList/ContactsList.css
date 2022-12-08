@@ -1,0 +1,26 @@
+.lista-de-contatos {
+    background-color: plum;
+    margin: auto;
+    padding: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.cartao-contato{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-style: outset;
+    padding: 1rem;
+}
+
+li {
+   list-style: none;
+}
+
+.botoes-lista{
+    display: flex;
+    margin-bottom: .5rem;
+}
