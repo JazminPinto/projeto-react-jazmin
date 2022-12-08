@@ -1,5 +1,4 @@
 .lista-de-contatos {
-    background-color: plum;
     margin: auto;
     padding: auto;
 }
@@ -12,8 +11,10 @@ h1{
 .cartao-contato{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-style: outset;
+    border-style: ridge;
+    border-color:aqua;
     padding: 1rem;
+    margin-bottom: .5rem;
 }
 
 li {

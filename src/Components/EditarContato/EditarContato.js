@@ -33,11 +33,12 @@ export default function EditarContacto() {
 
 
   return (
-    <div>
+    <div className="formulario">
       <h3>Editar contato</h3>
 
       <form>
-        <span>Nome:</span>
+        <div className='dados'>
+        <span>Nome: </span>
         <label>
           <input
             type="text"
@@ -45,8 +46,9 @@ export default function EditarContacto() {
             onChange={(e) => setNome(e.target.value)}
           />
         </label>
-        <br />
-        <span>Telefone:</span>
+        </div>
+        <div className='dados'>
+        <span>Telefone: </span>
         <label>
           <input
             type="text"
@@ -54,8 +56,9 @@ export default function EditarContacto() {
             onChange={(e) => setTelefone(e.target.value)}
           />
         </label>
-        <br />
-        <span>Email:</span>
+        </div>
+        <div className='dados'>
+        <span>Email: </span>
         <label>
           <input
             type="text"
@@ -63,7 +66,7 @@ export default function EditarContacto() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </label>
-        <br />
+        </div>
       </form>
       <Link to="/">
         <Button variant='success'onClick={alterarContato}>Alterar contato</Button>
