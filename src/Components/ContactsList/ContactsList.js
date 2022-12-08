@@ -40,22 +40,22 @@ export default function ContactsList() {
         return (
           <div className="cartao-contato" key={contato.id}>
             <ul>
-              <li>{contato.nome}</li>
-              <li>{contato.email}</li>
-              <li>{contato.telefone}</li>
+              <li>🕵{contato.nome}</li>
+              <li>✉{contato.email}</li>
+              <li>📞{contato.telefone}</li>
             </ul>
             <div >
               <Link to={`/editar/${contato.id}`}>
-                <Button variant="success" size='sm'
-                className="botoes-lista">Editar</Button>
+                <Button variant="outline-success" size='sm'
+                className="botoes-lista">Editar ✅ </Button>
               </Link> 
               <br/>
               <Button
-                variant="danger"
+                variant="outline-danger"
                 size="sm"
                 onClick={() => mostrarModal(contato.id)}
                 className="botoes-lista">
-                Apagar
+                Apagar ❌
               </Button>
             </div>
           </div>
