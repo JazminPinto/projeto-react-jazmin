@@ -1,8 +1,11 @@
 .formulario{
     text-align: center;
     border-style: ridge;
-    margin: .5rem;
+    border-color:aqua;
+    border-radius: .5rem;
     padding: .5rem;
+    margin:.5rem auto;
+    width: 30rem;
 }
 .dados{
     margin-bottom: .5rem;

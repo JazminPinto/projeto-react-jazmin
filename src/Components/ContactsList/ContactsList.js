@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import './ContactsList.css'
+import "./ContactsList.css";
 import { Button, Modal } from "react-bootstrap";
 
 export default function ContactsList() {
@@ -34,27 +34,35 @@ export default function ContactsList() {
 
   return (
     <div className="lista-de-contatos">
-      <h1><i>Lista de contatos</i></h1>
+      <h1>
+        <i>Lista de contatos</i>
+      </h1>
 
       {contatos.map((contato) => {
         return (
           <div className="cartao-contato" key={contato.id}>
             <ul>
-              <li>🕵{contato.nome}</li>
-              <li>✉{contato.email}</li>
-              <li>📞{contato.telefone}</li>
+              <li>🕵 {contato.nome}</li>
+              <li>✉ {contato.email}</li>
+              <li>📞 {contato.telefone}</li>
             </ul>
-            <div >
-              <Link to={`/editar/${contato.id}`}>
-                <Button variant="outline-success" size='sm'
-                className="botoes-lista">Editar ✅ </Button>
-              </Link> 
-              <br/>
+            <div className="link">
+              <Link to={`/editar/${contato.id}` }>
+                <Button
+                  variant="outline-success"
+                  size="sm"
+                  className="botoes-lista"
+                >
+                  Editar ✅{" "}
+                </Button>
+              </Link>
+              <br />
               <Button
                 variant="outline-danger"
                 size="sm"
                 onClick={() => mostrarModal(contato.id)}
-                className="botoes-lista">
+                className="botoes-lista"
+              >
                 Apagar ❌
               </Button>
             </div>
@@ -67,7 +75,7 @@ export default function ContactsList() {
           <Modal.Title>Apagar contato</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          Tem certeza? esta informação não poderá ser recuperada
+          Tem certeza ❔ <br/> Tem certeza mesmo❓❓ <br/> Esta informação não poderá ser recuperada❕❗. <br/> 👀
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={fecharModal}>

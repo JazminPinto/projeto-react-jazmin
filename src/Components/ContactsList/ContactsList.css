@@ -13,14 +13,21 @@ h1{
     grid-template-columns: 1fr 1fr;
     border-style: ridge;
     border-color:aqua;
-    padding: 1rem;
-    margin-bottom: .5rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    margin:.5rem auto;
+    width: 30rem;
 }
 
 li {
    list-style: none;
+   text-align: center;
 }
 
+.link{
+  text-decoration: none;
+
+}
 .botoes-lista{
     display: flex;
     margin-bottom: .5rem;

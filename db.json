@@ -1,8 +1,8 @@
 {
   "contacts": [
     {
-      "nome": "teste2",
-      "email": "ssdsf@teste",
+      "nome": "teste",
+      "email": "teste@exemplo.com",
       "telefone": "12 34567 8901",
       "id": 3
     },
@@ -13,16 +13,16 @@
       "id": 4
     },
     {
-      "nome": "catalina",
-      "email": "catalin@mail.com",
-      "telefone": "789654123",
-      "id": 5
-    },
-    {
       "nome": "Catalina",
       "email": "Catalin@hotmail.com",
       "telefone": "(84)99999-8888",
       "id": 6
+    },
+    {
+      "nome": "Juliana Paez",
+      "email": "Juliana@mail.com",
+      "telefone": "(55) 99988 6523",
+      "id": 7
     }
   ]
 }

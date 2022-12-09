@@ -39,9 +39,11 @@
 
 *{
   margin: .2rem;
+  padding: auto;
 }
 footer{
-  text-align: end;
+  text-align: center;
   margin-right: .5rem;
   font-size: .8rem;
+
 }
