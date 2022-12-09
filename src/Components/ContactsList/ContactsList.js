@@ -86,6 +86,7 @@ export default function ContactsList() {
           </Button>
         </Modal.Footer>
       </Modal>
+      {/*Modal se utiliza para abrir una nova janela tipo alert onde ele vai ter Header, Body e Footer */}
     </div>
   );
 }

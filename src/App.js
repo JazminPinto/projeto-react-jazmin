@@ -6,6 +6,7 @@ import EditarContacto from "./Components/EditarContato/EditarContato";
 import "./Components/Header/Header";
 import Header from "./Components/Header/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
+//App.js vai ser nosso arquivo principal
 
 function App() {
   return (

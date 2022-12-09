@@ -31,7 +31,6 @@ export default function EditarContacto() {
         })
   };
 
-
   return (
     <div className="formulario">
       <h3>Editar contato</h3>
